@@ -1,4 +1,4 @@
-# Project Name: [Gfps]
+[Gfps]
 
 ![Logo](https://github.com/user-attachments/assets/4ce70a1a-c106-4d9b-9cfc-40b5255496bc)
 
