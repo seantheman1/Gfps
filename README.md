@@ -5,7 +5,7 @@
 
 ## Overview
 
-[Provide a brief description of what the addon does and its purpose. What does it measure, optimize, or improve? Mention the use case and who would benefit from using it.]
+[A simple fps monitor for garry's mod]
 
 Example:  
 This addon is designed to monitor and optimize FPS (frames per second) for gaming and high-performance applications. It provides detailed statistics, including Average FPS, Minimum FPS, and graphical representations to track the performance over time. Whether you're a gamer or a developer, this addon will help you understand and improve the performance of your system.
