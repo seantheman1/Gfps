@@ -6,7 +6,7 @@ if CLIENT then
     local minFPS = math.huge
     local maxFPS = -math.huge
     local lastUpdateTime = 0
-    local updateInterval = 4 -- Update every 1 second
+    local updateInterval = 10 -- Update every 1 second
 
     local function updateFPS()
         local currentTime = os.time()
