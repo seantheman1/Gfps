@@ -8,7 +8,7 @@
 [A simple fps monitor for garry's mod]
 
 Example:  
-This addon is designed to monitor (frames per second) in game. It provides detailed statistics, including Average FPS, Minimum FPS, and graphical representations to track the performance over time. Whether you're a gamer or a developer, this addon will help you understand and improve the performance of your system within garry's mod.
+This addon is designed to monitor (frames per second) in game. It provides detailed statistics, including Average FPS, Minimum FPS, and graphical representations to track the performance over time.
 
 ## Features
 
@@ -27,7 +27,7 @@ Shows the current fps. This metric helps with knowing current peformance.
 
 #### Average FPS:
 
-The graph above shows the average FPS throughout the testing period. This metric helps gauge overall performance.
+The graph above shows the average FPS throughout the testing period. This metric helps show overall performance.
 
 #### Minimum FPS:
 The minimum FPS graph shows the lowest frame rates observed, which can help identify any performance drops that affect gameplay.
