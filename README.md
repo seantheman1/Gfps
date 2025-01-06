@@ -17,7 +17,6 @@ This addon is designed to monitor and optimize FPS (frames per second) in game. 
 - **Average FPS**: Displays the average FPS over a period of time.
 - **Minimum FPS**: Tracks and displays the lowest FPS observed.
 - **FPS Graph**: Visual representation of FPS performance over time, allowing you to spot dips and trends.
-- **Performance Optimization**: Provides insights into potential bottlenecks and optimization suggestions.
 
 ### Screenshots
 ![Ginfo](https://github.com/user-attachments/assets/5501e7e8-aa05-4fdc-b4c9-e7df79f194e6)
