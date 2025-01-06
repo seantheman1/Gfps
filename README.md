@@ -2,7 +2,7 @@
 
 ![Logo](https://github.com/user-attachments/assets/4ce70a1a-c106-4d9b-9cfc-40b5255496bc)
 
-
+⚠️This addon does not currently support public servers⚠️
 ## Overview
 
 [A simple fps monitor for garry's mod]
@@ -40,7 +40,7 @@ You can easily install this addon via the [Steam Workshop](https://steamcommunit
 
 1. Go to the [Steam Workshop page](https://steamcommunity.com/).
 2. Click the "Subscribe" button to automatically install the addon.
-3. After installation, launch your game and the addon will be available to use.
+3. After installation, launch singeplayer and the addon will be available to use.
 
 ## Usage
 1. Open Garry's mod | Thats basically it!
@@ -53,10 +53,10 @@ You can easily install this addon via the [Steam Workshop](https://steamcommunit
 
 | Metric          | Value        |
 |-----------------|--------------|
+| **FPS**         | 72 FPS       |
 | **Average FPS** | 75 FPS       |
 | **Minimum FPS** | 30 FPS       |
 | **Peak FPS**    | 120 FPS      |
-
 The above table shows sample output data.
 
 ## Contributing
