@@ -6,7 +6,7 @@ if CLIENT then
     local minFPS = math.huge
     local maxFPS = -math.huge
     local lastUpdateTime = 0
-    local updateInterval = 1 -- Update every 1 second
+    local updateInterval = 4 -- Update every 1 second
 
     local function updateFPS()
         local currentTime = os.time()
@@ -37,7 +37,7 @@ if CLIENT then
             fpsCount = fpsCount - 1
         end
     end
-    
+
     local function drawFPSCounter()
         updateFPS()
 
