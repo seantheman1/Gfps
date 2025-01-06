@@ -38,7 +38,7 @@ This graph plots the FPS over time, giving users a visual representation of perf
 
 ## Installation
 
-You can easily install this addon via the [Steam Workshop](https://steamcommunity.com/).
+You can easily install this addon via the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3401664692).
 
 1. Go to the [Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3401664692).
 2. Click the "Subscribe" button to automatically install the addon.
