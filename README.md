@@ -57,7 +57,7 @@ You can easily install this addon via the [Steam Workshop](https://steamcommunit
 | **FPS**         | 72 FPS       |
 | **Average FPS** | 75 FPS       |
 | **Minimum FPS** | 30 FPS       |
-| **Peak FPS**    | 120 FPS      |
+| **Max FPS**    | 120 FPS      |
 The above table shows sample output data.
 
 ## Contributing
