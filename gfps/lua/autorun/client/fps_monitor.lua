@@ -9,7 +9,7 @@ if CLIENT then
     local updateInterval = 10 -- Update every 1 second
 
     local function updateFPS()
-        local currentTime = os.time()
+        local currentTime = os.clock()
         if currentTime - lastUpdateTime < updateInterval then
             return
         end
