@@ -40,7 +40,7 @@ This graph plots the FPS over time, giving users a visual representation of perf
 
 You can easily install this addon via the [Steam Workshop](https://steamcommunity.com/).
 
-1. Go to the [Steam Workshop page](https://steamcommunity.com/).
+1. Go to the [Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3401664692).
 2. Click the "Subscribe" button to automatically install the addon.
 3. After installation, launch singeplayer and the addon will be available to use.
 
