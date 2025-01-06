@@ -8,30 +8,32 @@
 [A simple fps monitor for garry's mod]
 
 Example:  
-This addon is designed to monitor and optimize FPS (frames per second) for gaming and high-performance applications. It provides detailed statistics, including Average FPS, Minimum FPS, and graphical representations to track the performance over time. Whether you're a gamer or a developer, this addon will help you understand and improve the performance of your system.
+This addon is designed to monitor and optimize FPS (frames per second) in game. It provides detailed statistics, including Average FPS, Minimum FPS, and graphical representations to track the performance over time. Whether you're a gamer or a developer, this addon will help you understand and improve the performance of your system within garry's mod.
 
 ## Features
 
 ### Key Features:
+- **FPS** Display the current fps.
 - **Average FPS**: Displays the average FPS over a period of time.
 - **Minimum FPS**: Tracks and displays the lowest FPS observed.
 - **FPS Graph**: Visual representation of FPS performance over time, allowing you to spot dips and trends.
 - **Performance Optimization**: Provides insights into potential bottlenecks and optimization suggestions.
 
 ### Screenshots
+(https://github.com/user-attachments/assets/5501e7e8-aa05-4fdc-b4c9-e7df79f194e6)
+
+
+### FPS:
+Shows the current fps. This metric helps with knowing current peformance.
 
 #### Average FPS:
-![Average FPS](https://github.com/user-attachments/assets/5501e7e8-aa05-4fdc-b4c9-e7df79f194e6)
-
 
 The graph above shows the average FPS throughout the testing period. This metric helps gauge overall performance.
 
 #### Minimum FPS:
-![Minimum FPS](https://github.com/user-attachments/assets/5501e7e8-aa05-4fdc-b4c9-e7df79f194e6)  
 The minimum FPS graph shows the lowest frame rates observed, which can help identify any performance drops that affect gameplay.
 
-#### FPS Over Time:
-![FPS Graph](https://github.com/user-attachments/assets/5501e7e8-aa05-4fdc-b4c9-e7df79f194e6)  
+#### FPS Graph: 
 This graph plots the FPS over time, giving users a visual representation of performance fluctuations.
 
 ## Installation
