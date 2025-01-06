@@ -20,7 +20,7 @@ This addon is designed to monitor and optimize FPS (frames per second) in game. 
 - **Performance Optimization**: Provides insights into potential bottlenecks and optimization suggestions.
 
 ### Screenshots
-(https://github.com/user-attachments/assets/5501e7e8-aa05-4fdc-b4c9-e7df79f194e6)
+![Ginfo](https://github.com/user-attachments/assets/5501e7e8-aa05-4fdc-b4c9-e7df79f194e6)
 
 
 ### FPS:
