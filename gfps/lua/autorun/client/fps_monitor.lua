@@ -5,7 +5,7 @@ if CLIENT then
     local fpsCount = 0
     local minFPS = math.huge
     local maxFPS = -math.huge
-    local lastUpdateTime = 0
+    local lastUpdateTime = 5
     local updateInterval = 10 -- Update every 1 second
 
     local function updateFPS()
