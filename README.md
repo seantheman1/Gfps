@@ -2,7 +2,7 @@
 
 ![Logo](https://github.com/user-attachments/assets/4ce70a1a-c106-4d9b-9cfc-40b5255496bc)
 
-⚠️This addon does not currently support public servers⚠️
+⚠️In order to use this add on in public servers, It needs to be on a public server.⚠️
 ## Overview
 
 [A simple fps monitor for garry's mod]
