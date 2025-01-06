@@ -62,7 +62,7 @@ The above table shows sample output data.
 
 ## Contributing
 
-We welcome contributions! To contribute to this project:
+I welcome contributions! To contribute to this project:
 
 1. Fork the repository.
 2. Clone your fork locally.
@@ -71,7 +71,7 @@ We welcome contributions! To contribute to this project:
 5. Push to the branch: `git push origin feature-name`.
 6. Open a pull request to the `main` branch.
 
-Please ensure all contributions follow the project's coding standards and pass the test suite.
+Please ensure all contributions follow the project's code and work.
 
 ## License
 
