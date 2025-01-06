@@ -5,33 +5,25 @@ if CLIENT then
     local fpsCount = 0
     local minFPS = math.huge
     local maxFPS = -math.huge
-    local lastUpdateTime = 5
-    local updateInterval = 10 -- Update every 1 second
 
     local function updateFPS()
-        local currentTime = os.clock()
-        if currentTime - lastUpdateTime < updateInterval then
-            return
-        end
-        lastUpdateTime = currentTime
-    
         local fps = 1 / FrameTime()
         if fps == math.huge or fps ~= fps then
             return
         end
-    
+
         table.insert(fpsHistory, fps)
         fpsSum = fpsSum + fps
         fpsCount = fpsCount + 1
-    
+
         if fps < minFPS then
             minFPS = fps
         end
-    
+
         if fps > maxFPS then
             maxFPS = fps
         end
-    
+
         if #fpsHistory > 100 then
             fpsSum = fpsSum - table.remove(fpsHistory, 1)
             fpsCount = fpsCount - 1
