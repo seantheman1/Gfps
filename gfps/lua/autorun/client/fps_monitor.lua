@@ -21,28 +21,33 @@ local function drawFPSCounter()
     local screenWidth, screenHeight = ScrW(), ScrH()
     local boxWidth, boxHeight = 200, 160
     local boxX, boxY = 10, 10
+    local smallFontSize = "DermaDefault"
     local fontSize = "DermaLarge"
     local graphHeight = 50
     local graphFontSize = "DermaDefault"
 
     if screenHeight >= 2160 then -- 4K
-        boxWidth, boxHeight = 800, 600
+        boxWidth, boxHeight = 800, 650
         fontSize = "Trebuchet24"
+        smallFontSize = "Trebuchet18"
         graphHeight = 300
         graphFontSize = "Trebuchet18"
     elseif screenHeight >= 1440 then -- 1440p
-        boxWidth, boxHeight = 600, 400
+        boxWidth, boxHeight = 600, 800
         fontSize = "Trebuchet24"
+        smallFontSize = "Trebuchet18"
         graphHeight = 200
         graphFontSize = "Trebuchet18"
     elseif screenHeight >= 1080 then -- 1080p
-        boxWidth, boxHeight = 400, 300
-        fontSize = "Trebuchet18"
+        boxWidth, boxHeight = 400, 600
+        fontSize = "Trebuchet24"
+        smallFontSize = "Trebuchet18"
         graphHeight = 150
         graphFontSize = "Trebuchet12"
     elseif screenHeight >= 720 then -- 720p
-        boxWidth, boxHeight = 300, 300
-        fontSize = "Trebuchet18"
+        boxWidth, boxHeight = 300, 700
+        smallFontSize = "Trebuchet18"
+        fontSize = "Trebuchet24"
         graphHeight = 100
         graphFontSize = "Trebuchet12"
     end
@@ -50,6 +55,7 @@ local function drawFPSCounter()
     local graphWidth = boxWidth - 20
     local graphX = boxX + 10
     local graphY = boxY + boxHeight - graphHeight - 30
+    draw.RoundedBox(10, boxX, boxY, boxWidth, boxHeight, Color(30,30,30,200))
 
     surface.SetDrawColor(255, 255, 255, 255)
     surface.DrawOutlinedRect(graphX, graphY, graphWidth, graphHeight)
@@ -95,14 +101,32 @@ local function drawFPSCounter()
     local onePercentLow = fpsHistory[math.ceil(#fpsHistory * 0.01)] or 0
     local fivePercentLow = fpsHistory[math.ceil(#fpsHistory * 0.05)] or 0
 
-    draw.RoundedBox(10, boxX, boxY, boxWidth, boxHeight, Color(0,0,0,150))
-    draw.SimpleText("FPS: " .. string.format("%.2f", currentFPS), "DermaDefault", boxX + 10, boxY + 10, Color(255, 255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
-    draw.SimpleText("Min FPS: " .. string.format("%.2f", minFPS), "DermaDefault", boxX + 10, boxY + 50, Color(255, 255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
-    draw.SimpleText("Max FPS: " .. string.format("%.2f", maxFPS), "DermaDefault", boxX + 10, boxY + 90, Color(255, 255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
-    draw.SimpleText("Avg FPS: " .. string.format("%.2f", avgFPS), "DermaDefault", boxX + 10, boxY + 130, Color(255, 255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
-    draw.SimpleText("1% Low: " .. string.format("%.2f", onePercentLow), fontSize, boxX + 10, boxY + 170, Color(255, 255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
-    draw.SimpleText("5% Low: " .. string.format("%.2f", fivePercentLow), fontSize, boxX + 10, boxY + 210, Color(255, 255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
-    draw.SimpleText("Frametime: " .. string.format("%.2f", currentFrametime * 1000) .. "ms", fontSize, boxX + 10, boxY + 250, Color(255, 255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+    draw.SimpleText("FPS: ", fontSize, boxX + 10, boxY + 10, Color(255, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+    draw.SimpleText(string.format("%.2f", currentFPS), smallFontSize, boxX + 70, boxY + 10, Color(255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+    draw.SimpleText(" FPS", smallFontSize, boxX + 110, boxY + 10, Color(0, 255, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+
+    draw.SimpleText("Min FPS: ", fontSize, boxX + 10, boxY + 50, Color(255, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+    draw.SimpleText(string.format("%.2f", minFPS), smallFontSize, boxX + 150, boxY + 50, Color(255, 255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+    draw.SimpleText(" FPS", smallFontSize, boxX + 190, boxY + 50, Color(0, 255, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+
+    draw.SimpleText("Max FPS: ", fontSize, boxX + 10, boxY + 90, Color(255, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+    draw.SimpleText(string.format("%.2f", maxFPS), smallFontSize, boxX + 150, boxY + 90, Color(255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+    draw.SimpleText(" FPS", smallFontSize, boxX + 190, boxY + 90, Color(0, 255, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+
+    draw.SimpleText("Avg FPS: ", fontSize, boxX + 10, boxY + 130, Color(255, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+    draw.SimpleText(string.format("%.2f", avgFPS), smallFontSize, boxX + 150, boxY + 130, Color(255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+    draw.SimpleText(" FPS", smallFontSize, boxX + 190, boxY + 130, Color(0, 255, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+
+    draw.SimpleText("1% Low: ", fontSize, boxX + 10, boxY + 170, Color(255, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+    draw.SimpleText(string.format("%.2f", onePercentLow), smallFontSize, boxX + 150, boxY + 170, Color(255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+    draw.SimpleText(" FPS", smallFontSize, boxX + 190, boxY + 170, Color(0, 255, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+
+    draw.SimpleText("5% Low: ", fontSize, boxX + 10, boxY + 210, Color(255, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+    draw.SimpleText(string.format("%.2f", fivePercentLow), smallFontSize, boxX + 150, boxY + 210, Color(255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+    draw.SimpleText(" FPS", smallFontSize, boxX + 190, boxY + 210, Color(0, 255, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+
+    draw.SimpleText("Frametime: ", fontSize, boxX + 10, boxY + 250, Color(255, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+    draw.SimpleText(string.format("%.2f ms", currentFrametime * 1000), smallFontSize, boxX + 150, boxY + 250, Color(255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
 end
 
 hook.Add("HUDPaint", "DetailedFPSCounter", drawFPSCounter)
