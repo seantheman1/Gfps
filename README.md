@@ -2,13 +2,13 @@
 
 ![Logo](https://github.com/user-attachments/assets/4ce70a1a-c106-4d9b-9cfc-40b5255496bc)
 
-⚠️This addon does not currently support public servers⚠️
+⚠️In order to use this add on in public servers, It needs to be on a public server.⚠️
 ## Overview
 
 [A simple fps monitor for garry's mod]
 
 Example:  
-This addon is designed to monitor and optimize FPS (frames per second) in game. It provides detailed statistics, including Average FPS, Minimum FPS, and graphical representations to track the performance over time. Whether you're a gamer or a developer, this addon will help you understand and improve the performance of your system within garry's mod.
+This addon is designed to monitor (frames per second) in game. It provides detailed statistics, including Average FPS, Minimum FPS, and graphical representations to track the performance over time.
 
 ## Features
 
@@ -17,7 +17,6 @@ This addon is designed to monitor and optimize FPS (frames per second) in game. 
 - **Average FPS**: Displays the average FPS over a period of time.
 - **Minimum FPS**: Tracks and displays the lowest FPS observed.
 - **FPS Graph**: Visual representation of FPS performance over time, allowing you to spot dips and trends.
-- **Performance Optimization**: Provides insights into potential bottlenecks and optimization suggestions.
 
 ### Screenshots
 ![Ginfo](https://github.com/user-attachments/assets/5501e7e8-aa05-4fdc-b4c9-e7df79f194e6)
@@ -28,7 +27,7 @@ Shows the current fps. This metric helps with knowing current peformance.
 
 #### Average FPS:
 
-The graph above shows the average FPS throughout the testing period. This metric helps gauge overall performance.
+The graph above shows the average FPS throughout the testing period. This metric helps show overall performance.
 
 #### Minimum FPS:
 The minimum FPS graph shows the lowest frame rates observed, which can help identify any performance drops that affect gameplay.
@@ -38,9 +37,9 @@ This graph plots the FPS over time, giving users a visual representation of perf
 
 ## Installation
 
-You can easily install this addon via the [Steam Workshop](https://steamcommunity.com/).
+You can easily install this addon via the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3401664692).
 
-1. Go to the [Steam Workshop page](https://steamcommunity.com/).
+1. Go to the [Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3401664692).
 2. Click the "Subscribe" button to automatically install the addon.
 3. After installation, launch singeplayer and the addon will be available to use.
 
@@ -58,12 +57,12 @@ You can easily install this addon via the [Steam Workshop](https://steamcommunit
 | **FPS**         | 72 FPS       |
 | **Average FPS** | 75 FPS       |
 | **Minimum FPS** | 30 FPS       |
-| **Peak FPS**    | 120 FPS      |
+| **Max FPS**    | 120 FPS      |
 The above table shows sample output data.
 
 ## Contributing
 
-We welcome contributions! To contribute to this project:
+I welcome contributions! To contribute to this project:
 
 1. Fork the repository.
 2. Clone your fork locally.
@@ -72,7 +71,7 @@ We welcome contributions! To contribute to this project:
 5. Push to the branch: `git push origin feature-name`.
 6. Open a pull request to the `main` branch.
 
-Please ensure all contributions follow the project's coding standards and pass the test suite.
+Please ensure all contributions follow the project's code and work.
 
 ## License
 
